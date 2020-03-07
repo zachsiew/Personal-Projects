@@ -37,6 +37,12 @@ def isCorrect(board, num, coord):               # check if the given number is s
 
         if num == board[x][coord[1]]:           # check the column of the board
             return False
+
+    for x in range(coord[0]*3, coord[0]*3 + 3):         # check the box of the board
+        for y in range(coord[1]*3, coord[1]*3 + 3):
+            if num == board[x][y]:
+                return False
+
     return True
 
 
@@ -47,4 +53,4 @@ def isCorrect(board, num, coord):               # check if the given number is s
 print_board(board)
 isEmpty(board, empty_coord) # populate empty_coord
 print(empty_coord)
-print(isCorrect(board, 7, empty_coord[0]))
+print(isCorrect(board, 6, empty_coord[0]))

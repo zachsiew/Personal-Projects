@@ -15,15 +15,14 @@ xstart = 0
 ystart = 0
 
 class Snake:
-	def __init__(self, width, height, body, fruit, move):
+	def __init__(self, width, height, body, move):
 		self.width = width
 		self.height = height
 		self.body = body
-		self.fruit = fruit
 		self.move = move
 
 	def initial(self, screen, width, height, body, direction):
-		pygame.draw.rect(screen, white, (body[0][0], body[0][1], self.move, self.move))
+		pygame.draw.rect(screen, white, (self.body[0][0], self.body[0][1], self.move, self.move))
 		pygame.display.flip()
 
 	def snake(self, fruit, direction):
@@ -58,7 +57,8 @@ class Snake:
 
 	def draw(self, screen):
 		for x in range(len(self.body)):
-			
+			pygame.draw.rect(screen, white, (self.body[x][0], self.body[x][1], self.move, self.move))
+			pygame.display.flip()
 
 	def isValid(self, direction):
 		head = len(self.body)
@@ -86,6 +86,19 @@ class Snake:
 	def fruit(self, screen, width, height):
 
 	def main():
+		screen = pygame.display.set_mode([width,height])
+		pygame.display.set_caption("SNAKE")
+		snk = Snake(width, height, [[xstart, ystart]], 10)
+		run = True
+		while run:
+			for event in pygame.event.get():
+				if event.type == pygame.QUIT:
+					run = False
+				if event.type == pygame.KEYDOWN:
+					if event.key == pygame.K_UP:
+					if event.key == pygame.K_DOWN:
+					if event.key == pygame.K_LEFT:
+					if event.key == pygame.K_RIGHT:
 
 main()
 pygame.quit()

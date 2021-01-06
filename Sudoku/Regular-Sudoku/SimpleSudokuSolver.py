@@ -46,6 +46,7 @@ def isCorrect(board, num, coord):               # check if the given number is s
             if num == board[x][y]:
                 return False
 
+
     return True
 
 def solve(board, coord_list):

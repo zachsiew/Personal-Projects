@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+difference 51
+give 51
+estimation 51
+the 102
+original 51
+To 48
+of 51
+today 48
+you 51
+in 51
+and 51
+an 51
+=======
+To 48
+original 51
+the 102
+of 51
+you 51
+estimation 51
+difference 51
+give 51
+an 51
+today 48
+in 51
+and 51
+>>>>>>> 760d3aa5793e0be83e39863ac686040e8568ea8b

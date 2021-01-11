@@ -183,4 +183,5 @@ async def on_message(message):
 
 keep_alive()
 
+#token is classified information so it will not be shown here
 client.run(os.getenv('TOKEN'))
